@@ -1,5 +1,13 @@
 package de.tekup.loan.rest.api.msg;
 
-public class WsResponse {
+import java.util.List;
 
+import lombok.Data;
+
+@Data
+public class WsResponse {
+	
+	private boolean isEligeble;
+	private long approvedAmount;
+	private List<String> criteriaMismatch;
 }
